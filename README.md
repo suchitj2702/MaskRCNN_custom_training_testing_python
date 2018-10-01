@@ -1,1 +1,2 @@
-# MaskRCNN_implementation_python
+# Mask R-CNN implementation for training and testing custom datasets
+This implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras and Tensorflow is a simplified version of [matterport Mask_RCNN](https://github.com/matterport/Mask_RCNN) implementation. This implementation allows the user to train and test on custom datasets, by following some basic and specific dataset structuring.
