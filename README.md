@@ -9,7 +9,6 @@ Please read through the following steps carefully to go about successfully train
 
 To train on a custom dataset without making any changes to the code, implement the following steps as it is.
 
-## 0. Download or clone the repository as it is
 ## 1. Dividing the dataset into training and validation set
 
 * Put the training set in this [folder](TrainingImages/train)
@@ -22,7 +21,7 @@ To train on a custom dataset without making any changes to the code, implement t
 
 ![](READMEimages/Annotate1.PNG)
 
-* After marking regions of different classes on the images select the Region Attributes tab and create a column with the name as Class and give a class-name of your choice to each object in the column
+* After marking regions of different classes on the images, select the Region Attributes tab and create a column with the name as Class and give a class-name of your choice to each object in the column
 
 ![](READMEimages/Annotate2.PNG)
 
