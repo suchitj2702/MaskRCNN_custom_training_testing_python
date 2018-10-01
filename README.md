@@ -9,12 +9,12 @@ Please read through the following steps carefully to go about successfully train
 
 To train on a custom dataset without making any changes to the code, implement the following steps as it is.
 
-#### 1. Dividing the dataset into training and validation set
+### 1. Dividing the dataset into training and validation set
 
 * Put the training set in this [folder](TrainingImages/train)
 * Put the validation set in this [folder](TrainingImages/val)
 
-#### 2. Annotating the dataset
+### 2. Annotating the dataset
 
 * For annotating the dataset, we use [via 1.0.6](http://www.robots.ox.ac.uk/~vgg/software/via/) - download the tool using this [link](http://www.robots.ox.ac.uk/~vgg/software/via/downloads/via-1.0.6.zip)
 * Load the images from the [training set folder](TrainingImages/train) onto the tool and select the polygon tool to mark regions for annotation
@@ -29,7 +29,7 @@ To train on a custom dataset without making any changes to the code, implement t
 * Save the 'RegionJson.json' into the [training set folder](TrainingImages/train).
 * Repeat the above procedure for the validation set and save its 'RegionJson.json' into the [validation set folder](TrainingImages/val).
 
-#### 3. Training
+### 3. Training
 
 This implementation uses transfer-learning to train a new model. One can either use the pre-trained [MS-COCO dataset](http://cocodataset.org/#home) weights or weights saved from a previous training. This also allows the user to continue training a dataset for more epochs if the user is not satisfied with the results.
 
@@ -40,12 +40,14 @@ This implementation uses transfer-learning to train a new model. One can either 
 pip install -r requirements.txt
 ```
 * Run from command line as such(recommended python 3.6.5) -
-  Train a new model starting from pre-trained COCO weights
+
+  **To train a new model starting from pre-trained COCO weights**
   ```bash
   python maskrcnntrain.py coco
   ```
 
-  Continue training a model trained earlier
+  **To continue training a model trained earlier**
   ```bash
   python maskrcnntrain.py last
   ```
+* Once trained we find weights of each subsequent epoch in the 'logs' folder
