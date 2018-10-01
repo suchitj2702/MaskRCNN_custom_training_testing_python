@@ -13,8 +13,8 @@
     # Using the last saved weights by maskrcnntrain for inferrence
     python maskrcnninferrence.py last
 
-    # Using costum trained weights for inferrence
-    python maskrcnninferrence.py costum
+    # Using custom trained weights for inferrence
+    python maskrcnninferrence.py custom
 """
 import cv2
 import numpy as np
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('weights_to_use',
                         metavar = "<weights_to_use>",
-                        help = 'Can either be coco, last or costum')
+                        help = 'Can either be coco, last or custom')
     args = parser.parse_args()
     WEIGHTS_TO_USE = args.weights_to_use
     load_weights()
