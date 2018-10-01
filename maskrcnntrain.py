@@ -10,7 +10,7 @@
     # Train a new model starting from pre-trained COCO weights
     python maskrcnntrain.py coco
 
-    # Continue training a model that you had trained earlier
+    # Continue training a model that trained earlier
     python maskrcnntrain.py last
 """
 import json
