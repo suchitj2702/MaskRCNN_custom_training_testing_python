@@ -61,7 +61,8 @@ To avoid making any changes in the code follow through the following steps as it
 
 * Make sure that the custom trained weights and the [MS-COCO weights](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5) are saved in the main repository folder.
 * Rename the custom weights to 'trainedweights.h5'
-* (Skip this step if using MS-COCO weights for testing)In the [maskrcnninference.py](maskrcnninference.py) script edit the variable named CLASSES to a list of the class names of the classes used for training custom trained weights or in the last training.
+* (Skip this step if using MS-COCO weights for testing)
+  In the [maskrcnninference.py](maskrcnninference.py) script edit the variable named CLASSES to a list of the class names of the classes used for training custom trained weights or in the last training.
 * Put all the images to test in [this](TestImages/Images) folder
 * Run from command line as such(recommended python 3.6.5) -
 
