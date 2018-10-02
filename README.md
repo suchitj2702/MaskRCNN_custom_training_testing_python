@@ -81,3 +81,5 @@ To avoid making any changes in the code follow through the following steps as it
   python maskrcnninference.py custom
   ```
 * Once processed the inferred images are found in this [folder](TestImages/InferredImages)
+
+![](TestImages/InferredImages/9247489789_132c0d534a_z.jpg)
