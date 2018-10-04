@@ -36,14 +36,13 @@ class trainingconfig(Config):
 
     IMAGES_PER_GPU = 2
 
-    NUM_CLASSES = len(CLASSES)
+    NUM_CLASSES = len(CLASSES) + 1
 
     STEPS_PER_EPOCH = 100
 
 class Dataset(utils.Dataset):
     def load_dataset(self, dataset_dir, subset):
-        for i in range(0,len(CLASSES)-1,1):
-            print(i)
+        for i in range(0,len(CLASSES),1):
             self.add_class("Class", i + 1, CLASSES[i])
 
         assert subset in ["train", "val"]
